@@ -66,8 +66,7 @@ def main():
  
         if query:
             docs = VectorStore.similarity_search(query=query, k=3)
-            with st.spinner('Wait for it...'):
-                 time.sleep(5)
+            
                 
  
             llm = GooglePalm(model="models/text-bison-001",temperature=0.4)
@@ -75,6 +74,8 @@ def main():
             with get_openai_callback() as cb:
                 response = chain.run(input_documents=docs, question=query)
                 print(cb)
+            with st.spinner('Wait for it...'):
+                 time.sleep(5)
             st.write(response)
          
         
