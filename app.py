@@ -53,13 +53,9 @@ def main():
         st.write(f'{store_name}')
         # st.write(chunks)
  
-        if os.path.exists(f"{store_name}.pkl"):
-            with open(f"{store_name}.pkl", "rb") as f:
-                VectorStore = pickle.load(f)
-            # st.write('Embeddings Loaded from the Disk')s
-        else:
-            embeddings = GooglePalmEmbeddings()
-            VectorStore = FAISS.from_texts(chunks, embedding=embeddings)
+      
+         embeddings = GooglePalmEmbeddings()
+         VectorStore = FAISS.from_texts(chunks, embedding=embeddings)
            
  
         # embeddings = OpenAIEmbeddings()
