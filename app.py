@@ -75,7 +75,7 @@ def main():
                 response = chain.run(input_documents=docs, question=query)
                 print(cb)
             with st.spinner('Wait for it...'):
-                 time.sleep(5)
+                 time.sleep(3)
             st.write(response)
          
         
@@ -89,6 +89,8 @@ def main():
            with get_openai_callback() as cb:
                 response2 = chain.run(input_documents=docs, question=sum)
                 print(cb)
+            with st.spinner('Wait for it...'):
+                 time.sleep(3)
            st.write(response2)
  
 if __name__ == '__main__':
