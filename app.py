@@ -74,7 +74,7 @@ def main():
             st.write(response)
          
         
-st.markdown("---")
+        st.markdown("---")
         # creating a button for Prediction
         sum="Summarize this PDF"
         if st.button('Summarize!'):
