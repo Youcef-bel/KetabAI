@@ -13,13 +13,10 @@ import os
  
 # Sidebar contents
 with st.sidebar:
-    st.title('🤗💬 LLM Chat App')
+    st.title('KetabAI')
     st.markdown('''
     ## About
-    This app is an LLM-powered chatbot built using:
-    - [Streamlit](https://streamlit.io/)
-    - [LangChain](https://python.langchain.com/)
-    - [OpenAI](https://platform.openai.com/docs/models) LLM model
+    An APP to help you discover your PDF without the need of reading All of it
  
     ''')
     
