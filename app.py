@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 from dotenv import load_dotenv
 import pickle
 import google.generativeai as GoogleGenerativeAI
@@ -65,6 +66,9 @@ def main():
  
         if query:
             docs = VectorStore.similarity_search(query=query, k=3)
+            with st.spinner('Wait for it...'):
+                 time.sleep(5)
+                 st.success('Done!')
  
             llm = GooglePalm(model="models/text-bison-001",temperature=0.4)
             chain = load_qa_chain(llm=llm, chain_type="stuff")
