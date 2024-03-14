@@ -78,7 +78,7 @@ def main():
         # creating a button for Prediction
         sum="Summarize this PDF"
         if st.button('Summarize!'):
-        docs = VectorStore.similarity_search(query=sum, k=3)
+           docs = VectorStore.similarity_search(query=sum, k=3)
  
             llm = GooglePalm(model="models/text-bison-001",temperature=0.4)
             chain = load_qa_chain(llm=llm, chain_type="stuff")
