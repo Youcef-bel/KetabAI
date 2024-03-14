@@ -21,7 +21,7 @@ with st.sidebar:
  
     ''')
     
-    st.write('Made with ❤️ by [Prompt Engineer](https://youtube.com/@engineerprompt)')
+    st.write('Developed by [Youcef Belmokhtar](https://www.linkedin.com/in/youcefbelmokhtar/)')
  
 load_dotenv()
  
