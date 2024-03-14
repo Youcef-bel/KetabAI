@@ -68,7 +68,7 @@ def main():
         if query:
             docs = VectorStore.similarity_search(query=query, k=3)
  
-            llm = GooglePalm()
+            llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key="AIzaSyBOCE6DH3YLR-8uAYJizFwaX-cg1gE2P5A", temperature=0.1)
             chain = load_qa_chain(llm=llm, chain_type="stuff")
             with get_openai_callback() as cb:
                 response = chain.run(input_documents=docs, question=query)
