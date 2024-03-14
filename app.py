@@ -54,8 +54,8 @@ def main():
         # st.write(chunks)
  
       
-         embeddings = GooglePalmEmbeddings()
-         VectorStore = FAISS.from_texts(chunks, embedding=embeddings)
+        embeddings = GooglePalmEmbeddings()
+        VectorStore = FAISS.from_texts(chunks, embedding=embeddings)
            
  
         # embeddings = OpenAIEmbeddings()
