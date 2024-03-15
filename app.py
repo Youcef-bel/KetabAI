@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.app_logo import add_logo
 import time
 from dotenv import load_dotenv
 import pickle
@@ -11,7 +12,8 @@ from langchain.llms import GooglePalm
 from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
- 
+
+add_logo("https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(4).png?raw=true")
 # Sidebar contents
 logo_url = "https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(4).png?raw=true"
 with st.sidebar:
