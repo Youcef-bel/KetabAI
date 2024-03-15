@@ -98,7 +98,7 @@ def main():
            st.write(response2)
 
         st.markdown("---")
-        st.subheader("Similar Books' titles")
+        st.subheader("Similar Books")
         if st.button('Suggest!'):
             docs = VectorStore.similarity_search(query=sum, k=3)
             llm = GooglePalm(model="models/text-bison-001",temperature=0.4)
