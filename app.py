@@ -15,7 +15,7 @@ import os
 # Sidebar contents
 logo_url = "https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(4).png?raw=true"
 with st.sidebar:
-    st.markdown('<div class="center"><img src="https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(4).png?raw=true" alt="Logo" width=200 height=200></div>', unsafe_allow_html=True)
+    st.markdown('<div class="center"><img src="https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(4).png?raw=true" alt="Logo" width=300 height=300></div>', unsafe_allow_html=True)
     st.title('KetabAI')
     st.markdown('''
     ## About
