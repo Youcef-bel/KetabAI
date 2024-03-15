@@ -99,17 +99,16 @@ def main():
 
         st.markdown("---")
         # creating a button for Prediction
-        sugg="Suggest similiar book' names with the same context:"+response2
-        if st.button('Summarize!'):
-           docs2 = VectorStore.similarity_search(query=sugg, k=3)
-           llm = GooglePalm(model="models/text-bison-001",temperature=0.4)
-           chain = load_qa_chain(llm=llm, chain_type="stuff")
-           with get_openai_callback() as cb:
-                response2 = chain.run(input_documents=docs, question=sugg)
-                print(cb)
-           with st.spinner('Wait for it...'):
-                time.sleep(3)
-           st.write(response2)
+        if st.button('Suggest!'):
+            docs = VectorStore.similarity_search(query=sum, k=3)
+            llm = GooglePalm(model="models/text-bison-001",temperature=0.4)
+            chain = load_qa_chain(llm=llm, chain_type="stuff")
+            with get_openai_callback() as cb:
+                response2 = chain.run(input_documents=docs, question=sum)
+            prompt = "Suggest similiar book' names with the same context:"+response2
+            completion = palm.generate_text(model=model,prompt=prompt,temperature=0.7, max_output_tokens=2800)
+            print(completion.result)
+            st.write(completion)
  
  
 if __name__ == '__main__':
