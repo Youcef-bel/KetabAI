@@ -108,7 +108,7 @@ def main():
             prompt = "Suggest similiar book' names with the same context:"+response2
             completion = GoogleGenerativeAI.generate_text(model="models/text-bison-001",prompt=prompt,temperature=0.7, max_output_tokens=2800)
             print(completion.result)
-            st.write(completion)
+            st.write(completion.result)
  
  
 if __name__ == '__main__':
