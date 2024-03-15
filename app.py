@@ -20,7 +20,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown('''
     ## About
-    A PDF reading app designed to streamline your reading experience. With KetabAI, navigating through PDF documents has never been simpler.
+    A PDF reading app designed to streamline your reading experience. With KetabAI, navigating through PDF documents has never been simpler. You can chat with your PDF file or summarize it with a single click!
  
     ''')
     st.markdown("---")
