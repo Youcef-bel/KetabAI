@@ -13,7 +13,7 @@ from langchain.callbacks import get_openai_callback
 import os
  
 # Sidebar contents
-logo_url = "https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(2).png?raw=true"
+logo_url = "https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(3).png?raw=true"
 with st.sidebar:
     st.sidebar.image(logo_url)
     st.title('KetabAI')
