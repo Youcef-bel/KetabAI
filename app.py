@@ -108,6 +108,8 @@ def main():
             prompt = "Suggest similiar book' names with the same context:"+response2
             completion = GoogleGenerativeAI.generate_text(model="models/text-bison-001",prompt=prompt,temperature=0.7, max_output_tokens=800)
             print(completion.result)
+            with st.spinner('Wait for it...'):
+                time.sleep(3)
             st.write(completion.result)
  
  
