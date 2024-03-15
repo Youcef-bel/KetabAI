@@ -106,7 +106,7 @@ def main():
             with get_openai_callback() as cb:
                 response2 = chain.run(input_documents=docs, question=sum)
             prompt = "Suggest similiar book' names with the same context:"+response2
-            completion = palm.generate_text(model=model,prompt=prompt,temperature=0.7, max_output_tokens=2800)
+            completion = GoogleGenerativeAI.generate_text(model=model,prompt=prompt,temperature=0.7, max_output_tokens=2800)
             print(completion.result)
             st.write(completion)
  
