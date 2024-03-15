@@ -29,7 +29,7 @@ with st.sidebar:
 load_dotenv()
  
 def main():
-    st.subheader("Chat with PDF 💬")
+    st.subheader("Chat with your PDF")
  
  
     # upload a PDF file
@@ -84,6 +84,7 @@ def main():
         
         st.markdown("---")
         # creating a button for Prediction
+        st.subheader("PDF Summary")
         sum="Summarize this PDF"
         if st.button('Summarize!'):
            docs = VectorStore.similarity_search(query=sum, k=3)
