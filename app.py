@@ -13,7 +13,9 @@ from langchain.callbacks import get_openai_callback
 import os
  
 # Sidebar contents
+logo_url = "https://tse1.mm.bing.net/th/id/OIG1.KHKHRT0A2svFqNM4E0Jm?pid=ImgGn"
 with st.sidebar:
+    st.sidebar.image(logo_url)
     st.title('KetabAI')
     st.markdown('''
     ## About
