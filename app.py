@@ -11,9 +11,7 @@ from langchain.llms import GooglePalm
 from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
-st.image('https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(4).png?raw=true', caption='Logo')
 
-add_logo("https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(4).png?raw=true")
 # Sidebar contents
 logo_url = "https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(4).png?raw=true"
 with st.sidebar:
