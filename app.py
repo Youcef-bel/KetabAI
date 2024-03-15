@@ -98,7 +98,7 @@ def main():
            st.write(response2)
 
         st.markdown("---")
-        # creating a button for Prediction
+        st.subheader("Similar Books' titles")
         if st.button('Suggest!'):
             docs = VectorStore.similarity_search(query=sum, k=3)
             llm = GooglePalm(model="models/text-bison-001",temperature=0.4)
@@ -106,7 +106,7 @@ def main():
             with get_openai_callback() as cb:
                 response2 = chain.run(input_documents=docs, question=sum)
             prompt = "Suggest similiar book' names with the same context:"+response2
-            completion = GoogleGenerativeAI.generate_text(model="models/text-bison-001",prompt=prompt,temperature=0.7, max_output_tokens=2800)
+            completion = GoogleGenerativeAI.generate_text(model="models/text-bison-001",prompt=prompt,temperature=0.7, max_output_tokens=800)
             print(completion.result)
             st.write(completion.result)
  
