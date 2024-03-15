@@ -29,7 +29,7 @@ with st.sidebar:
 load_dotenv()
  
 def main():
-    st.header("Chat with PDF 💬")
+    st.subheader("Chat with PDF 💬")
  
  
     # upload a PDF file
