@@ -17,12 +17,13 @@ logo_url = "https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20
 with st.sidebar:
     st.markdown('<div class="center"><img src="https://github.com/Youcef-bel/KetabAI/blob/main/Untitled%20design%20(4).png?raw=true" alt="Logo" width=150 height=150></div>', unsafe_allow_html=True)
     st.title('KetabAI')
+    st.markdown("---")
     st.markdown('''
     ## About
     A PDF reading app designed to streamline your reading experience. With KetabAI, navigating through PDF documents has never been simpler.
  
     ''')
-    
+    st.markdown("---")
     st.write('Developed by [Youcef Belmokhtar](https://www.linkedin.com/in/youcefbelmokhtar/)')
  
 load_dotenv()
