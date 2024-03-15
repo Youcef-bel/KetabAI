@@ -19,7 +19,7 @@ with st.sidebar:
     st.title('KetabAI')
     st.markdown('''
     ## About
-    An APP to help you discover your PDF without the need of reading All of it
+    A PDF reading app designed to streamline your reading experience. With KetabAI, navigating through PDF documents has never been simpler.
  
     ''')
     
